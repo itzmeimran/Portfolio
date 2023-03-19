@@ -1,0 +1,457 @@
+/* CSS for Portfolio Website */
+
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Poppins;
+  }
+  
+  /* Styles for the parent container */
+  
+  .parent{
+    background-color:#FFB26B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Styles for the child container */
+  .glass{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 1rem;
+  }
+  .child{
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top:1.3rem;
+    /* background-color: white; */
+    
+    width:90vw;
+    border-radius: 1rem;
+    height:100%;
+    box-shadow: 6px 6px 30px black;
+  }
+  
+  /* Styles for the navbar */
+  
+ .name h4{
+  display: flex;
+  align-items: center;
+  text-align: center;
+ }
+  
+  .navbar li{
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    height:15vh;
+    margin-left: 3rem;
+    justify-content: space-around;
+  }
+  
+  .navbar .name{
+    color: #FFB26B;
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-left: 3rem;
+ 
+  } 
+ 
+  
+  .details, .button{
+    margin: 1.5rem 0;
+    justify-content: space-between;
+  }
+  
+  .details{
+    display: flex;
+    gap:1.6rem;
+    font-weight: bold;
+  }
+  .details a{
+    text-decoration: none;
+    color:black;
+  }
+
+  #button{
+    padding:0.7rem 1rem;
+    border: 2px solid #FFB26B;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-left: 9rem;
+  }
+  
+  /* Styles for the main content */
+  
+  .main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex:1;
+  }
+  
+  .left{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    flex-wrap: wrap;
+  }
+  
+  .left h1,h2{
+    margin:0;
+  }
+  #role{
+    color:#19A7CE;
+  }
+  .left,.right{
+    width:60%;
+    margin:4rem 0;
+  }
+  
+  .left p{
+    color:gray;
+    font-size: 1.2rem;
+  }
+  
+  .left h3{
+    color: #FFB26B;
+    margin:0;
+  }
+  
+  .left button{
+    font-size: 1rem;
+    width:10rem;
+    background-color: #FFB26B;
+    border:none;
+    padding:0.7rem 1.4rem;
+    border-radius: .7rem;
+    color:white;
+    font-weight: bold;
+    box-shadow: 1px 1px 10px black;
+  }
+  
+  .right{
+    display: flex;
+    justify-content: center;
+    width: 380px;
+  }
+  .right img{
+    height:250px;
+  }
+  /* Styles for buttons */
+  
+  #button:hover{
+    cursor:pointer;
+    background-color:#FFB26B ;
+    border:2px solid black;
+    box-shadow: 2px 2px 10px solid black;
+  }
+  
+  #hireme:hover{
+    cursor:pointer;
+    color:black;
+  }
+  
+  /* Styles for SVG icons */
+  
+  svg{
+    padding:0 4px;
+    justify-content: center;
+  }
+/* 
+  Mobile: 320px - 767px
+  Tablet: 768px - 1023px */
+
+/* For Mobile-Devices */
+   @media only screen and (min-width: 320px) and (max-width:767px){
+    .name{
+      font-size: 1.1rem;    
+    }
+    .child{
+      height:100%;
+    }
+    .navbar{
+      display:flex;
+      flex-wrap: wrap;
+    }
+    .left{
+      display:flex;
+      flex-direction: column;
+      padding-top:8.5rem;
+      width:100vw;
+    }
+    #button{
+      margin:0;
+    }
+    .left{
+      padding:1rem;
+    }
+    .right{
+      width:0;
+    }
+    .name h4{
+      padding: 1rem 0 1rem 0 ;
+    }
+    #hireme{
+      margin-top:1rem;
+    }
+    #button{
+      padding:.5rem 1rem;
+    }
+  }
+   
+  /* For tablet 768px */
+  /* @media only screen and (min-width: 768px) and (max-width:1024px) {
+    .navbar,.details{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .details{
+      margin:0;
+    }
+    .name{
+      padding-top:1rem;
+    }
+    .child{
+      height:100%;
+    }
+    .left{
+      margin-top:5rem;
+    }
+  }
+   */
+  /* For desktop and uhd devices */
+  /* @media only screen and  (min-width:1025px){
+    .name{
+      font-size: 2rem;
+    }
+    .parent{
+      height:100vh;
+    }
+    .child{
+      height:100%;
+  }
+  .navbar{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+ 
+  .details{
+    align-items: center;
+    margin:none;
+    padding:none
+
+  }
+  #ContactMe{
+    display:flex;
+    margin:1rem;
+    gap:2rem;
+  }
+} */ 
+  /* End of CSS for Portfolio Website */
+
+/* Contact Us section */
+
+#ContactMe{
+  display:flex;
+  margin:2.5rem;
+  gap:2rem;
+}
+#ContactMe img{
+  height:2rem;
+  width:2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#ContactMe img:hover{
+  height:3rem;
+  width:3rem;
+  cursor: pointer;
+ 
+}
+
+/* Hireme Section */
+
+.contactformparent{
+  height:100%;
+  background-color: #FFB26B;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.formm{
+  background-color: white;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  gap:1rem;
+  margin:2rem;
+  flex-direction: column;
+  align-items: center;
+  width:500px;
+  border:1px solid black;
+  
+  padding:1rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 30px black;
+}
+.formm *{
+  background-color: white;
+}
+form{
+  display:flex;
+  height:70%;
+  flex-direction: column;
+  gap:1rem;
+  
+}
+
+form input{
+  padding:.7rem ;
+  border:none;
+  outline:none;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+form button{
+  padding:.7rem ;
+  font-size: 1rem;
+  background-color:white ;
+  color:black;
+  font-weight: bold;
+  border-radius: .5rem;
+  width:6rem;
+  transition: all 1s ease-in-out;
+}
+
+form button:hover{
+  background-color:#FFB26B ;
+  cursor: pointer;
+  box-shadow: 1px 2px 7px solid black;
+}
+
+.contactformparent h1{
+  text-align: center;
+  font-size: 3rem;
+  padding:0;
+  margin:0;
+}
+
+/* Projects section */
+
+/* Projects section is in projects.html */
+
+/* My tech stack section */
+
+.mytechstack{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.082);
+  padding-top:3rem;
+}
+.mytechstack:first-child{
+  font-size: 2.5rem;
+}
+
+.techiconsparent{
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:3rem;
+  max-width:650px;
+  align-items: center;
+  justify-content: center;
+  padding:1.5rem;
+  border-radius: 1rem;
+  box-shadow: 6px 6px 30px black;
+}
+.techiconsparent img{
+  height:100px;
+  width:100px;
+  border-radius:50%;
+  object-fit: fit;
+  transition: all .3s ease-in-out;
+}
+
+.techiconsparent img:hover{
+  box-shadow: 1px 1px 12px black;
+  height:120px;
+  width:120px;
+}
+
+/* Flipping card effect */
+.flip-card {
+  background-color: transparent;
+  height:400px;
+  width:800px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+  border-radius: 1rem;
+}
+
+/* Style the back side */
+.flip-card-back {
+  box-shadow: 1px 1px 12px black;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: #FFB26B;
+  color: black;
+  transform: rotateY(180deg);
+  padding:1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
