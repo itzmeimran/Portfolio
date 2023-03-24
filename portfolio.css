@@ -134,6 +134,10 @@ body {
   text-align: center;
 }
 
+.nav-link{
+  display: flex;
+}
+
 .navbar li {
   display: flex;
   flex-wrap: wrap;
@@ -163,6 +167,10 @@ body {
 .button {
   margin: 1.5rem 0;
   justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
 }
 
 .details {
@@ -183,6 +191,11 @@ body {
   font-weight: bold;
   border-radius: 1rem;
   margin-left: 9rem;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
 }
 
 /* Styles for the main content */
@@ -593,7 +606,7 @@ form button:hover {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  overflow:hidden;
+  overflow: hidden;
   max-height: 10rem;
 }
 
