@@ -24,6 +24,29 @@
             width: 100%;
         }
 
+        .navbar {
+            width: 100vw;
+        }
+
+
+        .collapse {
+            margin-left: 2rem;
+        }
+
+        li.nav-item {
+            display: flex;
+            margin-right: 1rem;
+            margin-left: 1rem;
+
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+        }
+
         .skills_section {
 
             height: 100%;
@@ -216,9 +239,9 @@
 </head>
 
 <body>
-    <div class="container-sm container-md container-lg container-xl d-flex flex-column align-items-center">
+    <div class="container-sm container-md container-lg container-xl">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent d-flex justify-content-between ">
-            <h4 class="navbar-brand text-wrap " href="#">Phatan Mohammad Imran Khan</h4>
+            <h4 class="navbar-brand text-wrap heading-name" href="#">Phatan Mohammad Imran Khan</h4>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -226,26 +249,24 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Projects.html">Projects</a>
+                        <a class="nav-link" href="Pro.html">Projects</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="Mytechstack.html">My-Tech-Stack</a>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link button" href="Assets/PHATAN MOHAMMAD IMRAN KHAN 19-02.pdf"><button
-                                id="button">
-                                Resume
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                                    <path fill="none" d="M0 0h24v24H0z" />
-                                    <path d="M3 19h18v2H3v-2zM13 9h7l-8 8-8-8h7V1h2v8z" />
-                                </svg>
-                            </button></a>
-                    </li>
+                </ul>
+                <a class="nav-link button" href="Assets/PHATAN MOHAMMAD IMRAN KHAN 19-02.pdf"><button id="button">
+                        Resume
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M3 19h18v2H3v-2zM13 9h7l-8 8-8-8h7V1h2v8z" />
+                        </svg>
+                    </button></a>
+            </div>
         </nav>
     </div>
     <div class="skills_section">
@@ -332,7 +353,7 @@
 
 
     <div class="mytechstack d-flex flex-column">
-        <h1 class="m-2">My-Tech-Stack</h1>
+
         <div class="techiconsparent">
             <img class='techicons' src="https://cdn3d.iconscout.com/3d/free/thumb/html-5728485-4781249.png"
                 alt="HTML" />
